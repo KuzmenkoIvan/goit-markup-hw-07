@@ -1,0 +1,146 @@
+@media screen and (min-width: 1200px) {
+  button {
+    cursor: pointer;
+  }
+
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+
+  .about,
+  .team,
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .about-list,
+  .works-list,
+  .team-list,
+  .customers-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .about-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    background-color: var(--grey-color);
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  .about-list,
+  .team-list {
+    flex-wrap: nowrap;
+  }
+
+  .section-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .section-text {
+    font-weight: 400;
+  }
+
+  .works {
+    display: block;
+    padding-bottom: 120px;
+  }
+
+  .works-photo {
+    width: calc((100% - 24px * 2) / 3);
+  }
+
+  .team {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .team > .container,
+  .customers > .container,
+  .footer > .container {
+    max-width: 1200px;
+  }
+
+  .team-photo {
+    width: calc((100% - 24px * 3) / 4);
+  }
+
+  .soc-link {
+    transition: background-color var(--hov-foc-transit);
+  }
+
+  .soc-link:is(:hover, :focus) {
+    background-color: var(--hover-focus-color);
+  }
+
+  .customers-item {
+    width: calc((100% - 24px * 5) / 6);
+  }
+
+  .customers-link {
+    transition: border-color var(--hov-foc-transit);
+  }
+
+  .customers-link:is(:hover, :focus) {
+    border-color: var(--hover-focus-color);
+  }
+
+  .customers-icon {
+    transition: fill var(--hov-foc-transit);
+  }
+
+  .customers-link:is(:hover, :focus) .customers-icon {
+    fill: var(--hover-focus-color);
+  }
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-logobox {
+    display: block;
+    margin-right: 120px;
+  }
+
+  .soc-media {
+    margin-right: auto;
+  }
+
+  .footer-link {
+    transition: background-color var(--hov-foc-transit);
+  }
+
+  .footer-link:is(:hover, :focus) {
+    background-color: var(--bg-hover-color);
+  }
+
+  .footer-input {
+    transition: border-color var(--hov-foc-transit);
+  }
+
+  .footer-input:is(:hover, :focus) {
+    border-color: var(--iris-color);
+  }
+
+  .footer-btn {
+    transition: background-color var(--hov-foc-transit);
+  }
+
+  .footer-btn:hover,
+  .footer-btn:focus {
+    background-color: var(--hover-focus-color);
+  }
+}

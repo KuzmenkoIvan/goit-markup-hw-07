@@ -1,0 +1,42 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+  }
+
+  .about-list,
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .about-item,
+  .team-photo {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .team > .container,
+  .customers > .container,
+  .footer > .container {
+    max-width: 582px;
+  }
+
+  .customers-item {
+    width: calc((100% - 24px * 2) / 3);
+  }
+
+  .footer-container,
+  .subscribe {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    text-align: left;
+    align-items: baseline;
+  }
+
+  .footer-input {
+    width: 264px;
+  }
+}
