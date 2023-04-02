@@ -2,4 +2,22 @@
   .container {
     max-width: 448px;
   }
+
+  .menu-soc-list {
+    gap: 56px;
+  }
+
+  .menu-tel {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    width: calc(100% - 30px);
+    overflow-y: auto;
+    max-height: 576px;
+    height: 90%;
+  }
 }

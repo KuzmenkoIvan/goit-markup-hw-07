@@ -3,6 +3,132 @@
     max-width: 736px;
   }
 
+  .header {
+    border-bottom: 1px solid var(--cornflower-color);
+    padding: 0;
+  }
+
+  .header-container {
+    display: flex;
+  }
+
+  .header-navigation {
+    display: flex;
+    margin-right: auto;
+    padding-top: 24px;
+  }
+
+  .header-logo {
+    font-family: "Raleway", sans-serif;
+    color: var(--primary-text-color);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 120px;
+  }
+
+  .blue-logo {
+    color: var(--iris-color);
+  }
+
+  .list {
+    list-style: none;
+  }
+
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .header-item {
+    position: relative;
+    padding-bottom: 25px;
+  }
+
+  .nav-list {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    text-decoration: none;
+  }
+
+  .nav-list.current::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--hover-focus-color);
+    border-radius: 2px;
+  }
+
+  .nav-list.current {
+    color: var(--hover-focus-color);
+  }
+
+  .contact-link {
+    display: flex;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: var(--second-text-color);
+    text-decoration: none;
+  }
+
+  .mob-menu-open {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .hero {
+    background: var(--l-grad), url(../images/herobg-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background: var(--l-grad), url(../images/herobg-tablet@2x.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  .hero-inner {
+    max-width: 500px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    margin-bottom: 36px;
+  }
+
+  .section-subtitle {
+    text-align: left;
+  }
+
   .about-list,
   .team-list {
     display: flex;
@@ -38,5 +164,10 @@
 
   .footer-input {
     width: 264px;
+  }
+
+  .modal {
+    width: 408px;
+    padding: 24px;
   }
 }
