@@ -747,7 +747,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
-  align-items: center;
+  align-items: flex-end;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.04em;
@@ -774,7 +774,6 @@ body {
 
 .policy-link {
   color: var(--iris-color);
-  /* margin-left: 4px; */
 }
 
 .modal-btn {
