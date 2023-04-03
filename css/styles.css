@@ -414,8 +414,8 @@ body {
 }
 
 .portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .filters-button {
@@ -429,13 +429,8 @@ body {
   background: var(--grey-color);
   border: 1px solid var(--cornflower-color);
   border-radius: 4px;
-  transition-property: color, border-color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filters-button:hover,
-.filters-button:focus,
 .filters-button.current {
   color: var(--white-color);
   border-color: transparent;
@@ -445,30 +440,26 @@ body {
 }
 
 .filters-list {
-  justify-content: center;
-  margin-bottom: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 16px;
+  margin-bottom: 48px;
 }
 
 .cards-link {
   display: block;
   text-decoration: none;
-  transition: box-shadow var(--hov-foc-transit);
 }
 
 .cards-project {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
   row-gap: 48px;
 }
 
 .cards-list {
-  width: calc((100% - 24px * 2) / 3);
-}
-
-.cards-link:is(:hover, :focus) {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  width: 100%;
 }
 
 .cards-item {
@@ -478,27 +469,29 @@ body {
   border-right: 1px solid var(--cornflower-color);
 }
 
-.cards-list:is(:hover, :focus) .cards-text {
-  transform: translateY(0);
-}
-
 .cards-wrap {
   position: relative;
   overflow: hidden;
 }
 
-.cards-text {
-  position: absolute;
-  top: 0;
-  padding: 40px 32px;
+.cards-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  margin-bottom: 8px;
+}
+
+.cards-subtitle {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--grey-color);
-  background-color: var(--iris-color);
-  height: 100%;
-  transform: translateY(100%);
-  transition: transform var(--hov-foc-transit);
+  color: var(--second-text-color);
+}
+
+.cards-text {
+  display: none;
 }
 
 .footer {

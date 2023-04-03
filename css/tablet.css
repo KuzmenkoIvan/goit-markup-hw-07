@@ -152,6 +152,31 @@
     width: calc((100% - 24px * 2) / 3);
   }
 
+  .portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .filters-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 48px;
+  }
+
+  .cards-project {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .cards-list {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .cards-text {
+    display: none;
+  }
+
   .footer-container,
   .subscribe {
     flex-direction: row;

@@ -227,6 +227,66 @@
     fill: var(--hover-focus-color);
   }
 
+  .portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+
+  .filters-button {
+    transition-property: color, border-color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .filters-button:hover,
+  .filters-button:focus {
+    color: var(--white-color);
+    border-color: transparent;
+    background-color: var(--hover-focus-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  .filters-list {
+    margin-bottom: 72px;
+  }
+
+  .cards-link {
+    transition: box-shadow var(--hov-foc-transit);
+  }
+
+  .cards-project {
+    row-gap: 48px;
+  }
+
+  .cards-list {
+    width: calc((100% - 24px * 2) / 3);
+  }
+
+  .cards-link:is(:hover, :focus) {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+
+  .cards-list:is(:hover, :focus) .cards-text {
+    transform: translateY(0);
+  }
+
+  .cards-text {
+    display: unset;
+    position: absolute;
+    top: 0;
+    padding: 40px 32px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--grey-color);
+    background-color: var(--iris-color);
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform var(--hov-foc-transit);
+  }
+
   .footer {
     padding-top: 100px;
     padding-bottom: 100px;
